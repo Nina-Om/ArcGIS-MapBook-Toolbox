@@ -28,10 +28,35 @@ Layername : Input feature layer
 out_ws : a workspace for storing the generated files 
 resolution  : image resolution
 
-The `import()` pseudo-function would allow module attributes to be indicated in an options bag in the second argument.
+## Python Scripts
+1. PNGformat.py
 
 ```python
+import arcpy, os, string
+
+# Read the parameter values:
+Layername = arcpy. GetParameter(0)
+out_ws = arcpy.GetParameterAsText(1)
+resolution = arcpy.GetParameterAsText(2)
+#
+mxd = arcpy.mapping.MapDocument("CURRENT")
+df = mxd.activeDataFrame
+ddp = mxd.dataDrivenPages
+# 
 Layers = arcpy.mapping.ListLayers(Layername, "", df)
+```
+Assign a layer name `Layers[0].name` to dataframe title. Define dataframe `df` Title Element name as `TitleText` in your mapdocument.
+```python
+TextElement = arcpy.mapping.ListLayoutElements(mxd, "TEXT_ELEMENT","TitleText")[0]
+TextElement.text = Layers[0].name
+```
+Generate PNG files of the `ddp` pages.
+```python
+for pageNum in range(1, ddp.pageCount + 1):
+  ddp.currentPageID = pageNum
+  print "Exporting page {0} of {1}".format(str(ddp.currentPageID), str(ddp.pageCount))
+  arcpy.mapping.ExportToPNG(mxd, os.path.join(out_ws, Layers[0].name + str(pageNum) + ".png"), resolution=resolution)
+del mxd
 ```
 
 
