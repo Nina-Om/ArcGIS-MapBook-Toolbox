@@ -28,13 +28,13 @@ Map scripting can be integrated with Data Driven Pages to create a map book that
 [MapDocument](https://desktop.arcgis.com/en/arcmap/10.3/analyze/arcpy-mapping/mapdocument-class.htm)
 
 ## Toolbox Parameters list
-1. PDFformat.py
-Layer : Input feature layer 
-out_ws : a workspace for storing the generated files 
+1. PDFformat.py<br />
+Layer : Input feature layer <br />
+out_ws : a workspace for storing the generated files<br /> 
 tmpPdf : mapbook PDf file name 
-2. PNGformat.py
-Layername : Input feature layer
-out_ws : a workspace for storing the generated files 
+2. PNGformat.py<br />
+Layername : Input feature layer<br />
+out_ws : a workspace for storing the generated files <br />
 resolution  : image resolution
 
 ## Python Scripts
