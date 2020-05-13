@@ -28,6 +28,13 @@ Layername : Input feature layer
 out_ws : a workspace for storing the generated files 
 resolution  : image resolution
 
+The `import()` pseudo-function would allow module attributes to be indicated in an options bag in the second argument.
+
+```python
+Layers = arcpy.mapping.ListLayers(Layername, "", df)
+```
+
+
 
 
 
