@@ -59,7 +59,33 @@ for pageNum in range(1, ddp.pageCount + 1):
 del mxd
 ```
 
+2. PDFformat.py
 
+```python
+import arcpy, os, string
 
-
-
+# Read the parameter values:
+Layername = arcpy. GetParameter(0)
+out_ws = arcpy.GetParameterAsText(1)
+tmpPdf = arcpy.GetParameterAsText(2)
+#
+mxd = arcpy.mapping.MapDocument("CURRENT")
+df = mxd.activeDataFrame
+ddp = mxd.dataDrivenPages
+#
+Layers = arcpy.mapping.ListLayers(Layername, "", df)
+```
+Assign a layer name `Layers[0].name` to dataframe title. Define dataframe `df` Title Element name as `TitleText` in your mapdocument.
+```python
+TextElement = arcpy.mapping.ListLayoutElements(mxd, "TEXT_ELEMENT","TitleText")[0]
+TextElement.text = Layers[0].name
+```
+Export all 'ddp' pages to pdf file `tmpPDF`.
+```python
+ddp.exportToPDF(os.path.join(out_ws , tmpPdf + ".pdf"), "ALL")
+#tmpPdf.appendPages(os.path.join(out_ws , tmpPdf + ".pdf"))
+del mxd
+tmpPdf.updateDocProperties(pdf_open_view="USE_THUMBS",
+pdf_layout="SINGLE_PAGE")
+del tmpPdf
+```
