@@ -29,7 +29,7 @@ out_ws : a workspace for storing the generated files
 resolution  : image resolution
 
 ## Python Scripts
-####1. PNGformat.py
+### 1. PNGformat.py
 
 ```python
 import arcpy, os, string
@@ -59,7 +59,7 @@ for pageNum in range(1, ddp.pageCount + 1):
 del mxd
 ```
 
-####2. PDFformat.py
+### 2. PDFformat.py
 
 ```python
 import arcpy, os, string
