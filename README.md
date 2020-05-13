@@ -86,7 +86,7 @@ Assign a layer name `Layers[0].name` to dataframe title. Define dataframe `df` T
 TextElement = arcpy.mapping.ListLayoutElements(mxd, "TEXT_ELEMENT","TitleText")[0]
 TextElement.text = Layers[0].name
 ```
-Export all 'ddp' pages to pdf file `tmpPDF`.
+Export all `ddp` pages to pdf file `tmpPDF`.
 ```python
 ddp.exportToPDF(os.path.join(out_ws , tmpPdf + ".pdf"), "ALL")
 #tmpPdf.appendPages(os.path.join(out_ws , tmpPdf + ".pdf"))
