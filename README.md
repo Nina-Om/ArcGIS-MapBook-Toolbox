@@ -1,6 +1,6 @@
 # ArcGIS-MapBook-Toolbox
 
-MapBook.tbx contains two script files to automate maps production in PNG and PDF format:<br />
+MapBook.tbx contains two script files to automate ArcGIS maps production:<br />
 PDFformay.py<br />
 PNGformat.py
 
