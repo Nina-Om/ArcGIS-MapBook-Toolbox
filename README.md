@@ -27,7 +27,7 @@ Map scripting can be integrated with Data Driven Pages to create a map book that
 [Relevant blog post](https://www.esri.com/arcgis-blog/products/arcgis-desktop/mapping/combining-data-driven-pages-with-python-and-arcpy-mapping/)<br />
 [MapDocument](https://desktop.arcgis.com/en/arcmap/10.3/analyze/arcpy-mapping/mapdocument-class.htm)
 
-## Toolbox Parameters list
+## Toolbox Parameters
 1. PDFformat.py<br />
 Layer : Input feature layer <br />
 out_ws : a workspace for storing the generated files<br /> 
