@@ -1,9 +1,9 @@
 # ArcGIS-MapBook-Toolbox
 
 MapBook.tbx contains three script files to automate ArcGIS maps production:<br />
- 1. PDFbyPageIndex.py : For producing single page PDF files of the selected layers for one Data Driven Page Number as well as the   appended PDF file of the selected layers <br /> 
- 2. PDF_byLayer.py : For producing appended PDF file of a selected layer for ALL Data Driven pages <br />
- 3. PNGbyPageIndex : For producing a PNG file of the selected layers for one Data Driven Page Number <br />
+ 1. PDFbyPageIndex.py : <br />For producing single page PDF files of the selected layers for one Data Driven Page Number as well as the   appended PDF file of the selected layers <br /> 
+ 2. PDF_byLayer.py : <br />For producing appended PDF file of a selected layer for ALL Data Driven pages <br />
+ 3. PNGbyPageIndex : <br />For producing a PNG file of the selected layers for one Data Driven Page Number <br />
 
 The current scripting Toolbox, MapBook, enables to include dynamic data frame title, continuous page number for all of the target layers, setting the print properties and generating PDF and PNG files of the selected target data layers with the aid of Data Driven Pages and Arcpy.mapping. The output files should be saved in separate folder based on the selected Data Driven Page number.
 
