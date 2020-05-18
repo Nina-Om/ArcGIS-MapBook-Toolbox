@@ -126,8 +126,6 @@ pageNum = arcpy.GetParameter(3)
 mxd = arcpy.mapping.MapDocument("CURRENT")
 df = mxd.activeDataFrame
 ddp = mxd.dataDrivenPages
-```
-```python
 for lyr in listlayers:
   arcpy.AddMessage(lyr)
   lyr = arcpy.mapping.ListLayers(mxd, lyr ,df)[0]
