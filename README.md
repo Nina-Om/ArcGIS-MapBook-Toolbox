@@ -16,7 +16,7 @@ To use this toolbox, the Data Driven Pages and laout should be defined in mapdoc
 
 ![alt text here](https://github.com/Nina-Om/ArcGIS-MapBook-Toolbox/blob/master/pdf2.PNG)
 
-![alt text here](https://github.com/Nina-Om/ArcGIS-MapBook-Toolbox/blob/master/png3.PNG)
+![alt text here](https://github.com/Nina-Om/ArcGIS-MapBook-Toolbox/blob/master/JPEG.PNG)
 
 
 ## MapDocument
@@ -133,7 +133,7 @@ for lyr in listlayers:
   arcpy.RefreshActiveView(),arcpy.RefreshTOC()
   TextElement = arcpy.mapping.ListLayoutElements(mxd, "TEXT_ELEMENT", "TitleText")[0]
   TextElement.text = lyr.name
-  arcpy.mapping.ExportToPNG(mxd, os.path.join(out_ws, lyr.name + str(pageNum) + ".png"), resolution=resolution)
+  arcpy.mapping.ExportToJPEG(mxd, os.path.join(out_ws, lyr.name + str(pageNum) + ".jpeg"), resolution=resolution)
   lyr.visible = False
   arcpy.RefreshActiveView(),arcpy.RefreshTOC()
   del mxd
