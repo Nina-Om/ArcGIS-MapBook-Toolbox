@@ -114,7 +114,7 @@ pdf_layout="SINGLE_PAGE")
 del tmpPdf
 ```
 
-### 3. PNGbyPageIndex.py
+### 3. JPEGbyPageIndex.py
 ```python
 # Read the parameter values:
 listlayers = arcpy. GetParameter(0)
