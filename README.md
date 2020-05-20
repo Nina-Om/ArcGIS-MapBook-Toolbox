@@ -16,7 +16,7 @@ To use this toolbox, the Data Driven Pages and laout should be defined in mapdoc
 
 ![alt text here](https://github.com/Nina-Om/ArcGIS-MapBook-Toolbox/blob/master/pdf2.PNG)
 
-![alt text here](https://github.com/Nina-Om/ArcGIS-MapBook-Toolbox/blob/master/JPEG.PNG)
+![alt text here](https://github.com/Nina-Om/ArcGIS-MapBook-Toolbox/blob/master/jpeg.PNG)
 
 
 ## MapDocument
