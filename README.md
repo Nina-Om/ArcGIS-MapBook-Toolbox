@@ -29,6 +29,19 @@ Map scripting can be integrated with Data Driven Pages to create a map book that
 [Relevant blog post](https://www.esri.com/arcgis-blog/products/arcgis-desktop/mapping/combining-data-driven-pages-with-python-and-arcpy-mapping/)<br />
 [MapDocument](https://desktop.arcgis.com/en/arcmap/10.3/analyze/arcpy-mapping/mapdocument-class.htm)
 
+
+
+## Usage
+Before using the toolbox:
+
+Data Driven Pages should be defined before using the tool. As well as the map title, legend, etc. 
+
+Please define the map tiltle Element Name as 'TitleText' before using the tool. You should open your map title properties, click on "Size and Position" Tab and type "TitleText" in "Element name" box.
+
+
+![alt text here](https://github.com/Nina-Om/ArcGIS-MapBook-Toolbox/blob/master/Capture.PNG)
+
+
 ## Python Scripts
 ### 1. PDFbyPageIndex.py
 
@@ -99,7 +112,7 @@ ddp = mxd.dataDrivenPages
 #
 Layers = arcpy.mapping.ListLayers(Layername, "", df)
 ```
-Assign a layer name `Layers[0].name` to dataframe title. Define dataframe `df` Title Element name as `TitleText` in your mapdocument.
+The next two line change map title automatically based on the layer name. 
 ```python
 TextElement = arcpy.mapping.ListLayoutElements(mxd, "TEXT_ELEMENT","TitleText")[0]
 TextElement.text = Layers[0].name
