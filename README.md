@@ -67,19 +67,14 @@ for lyr in listlayers:
   lyr.visible = True
   arcpy.RefreshActiveView(),arcpy.RefreshTOC()
   tmpPdf = os.path.join(out_ws + "\\"+ str(lyr.name) + str(pageNum) + ".pdf")
-```
-Assign a layer name to dataframe title. Define dataframe `df` Title Element name as `TitleText` in your mapdocument.
-```python
   TextElement = arcpy.mapping.ListLayoutElements(mxd, "TEXT_ELEMENT", "TitleText")[0]
   TextElement.text = lyr.name
-```
-Export PDF files of the selected page index 'pageNum'.
-```python
+#Export PDF files of the selected page index 'pageNum'.
   ddp.exportToPDF(tmpPdf, "CURRENT")
   lyr.visible = False
   arcpy.RefreshActiveView(),arcpy.RefreshTOC()
 ```
-Save the PDF files in created workspace 'out_ws' and append the files to a final PDF file 'Region + str(pageNum) + "pdf"'. Foe each DDP Number please save the files in the separate folders.
+Save the PDF files in created workspace 'out_ws' and append the files to a final PDF file 'Region + str(pageNum) + "pdf"'. Foe each DDP Number please save the files in a separate folder.
 ```python
 if os.path.exists(os.path.join(out_ws + "\\" + "Region" + str(pageNum) + ".pdf")):
   os.remove(os.path.join(out_ws + "\\" + "Region" + str(pageNum) + ".pdf"))
