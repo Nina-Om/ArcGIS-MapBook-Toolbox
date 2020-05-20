@@ -34,10 +34,9 @@ Map scripting can be integrated with Data Driven Pages to create a map book that
 ## Usage
 Before using the toolbox:
 
-Data Driven Pages should be defined before using the tool. As well as the map title, legend, etc. 
+Please set up Data Driven Pages before using the tool. As well as the map title, legend, etc. 
 
 Please define the map tiltle Element Name as 'TitleText' before using the tool. You should open your map title properties, click on "Size and Position" Tab and type "TitleText" in "Element name" box.
-
 
 ![alt text here](https://github.com/Nina-Om/ArcGIS-MapBook-Toolbox/blob/master/Capture.PNG)
 
