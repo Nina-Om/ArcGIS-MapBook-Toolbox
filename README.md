@@ -12,9 +12,9 @@ The current scripting Toolbox, MapBook, enables to include dynamic data frame ti
 To use this toolbox, the Data Driven Pages and laout should be defined in mapdocument environment. Data Driven Pages Tutorial is available at [Data Driven Pages](http://help.arcgis.com/en/arcgisdesktop/10.0/help/index.html#//00sr00000006000000).
 
 
-![alt text here](https://github.com/Nina-Om/ArcGIS-MapBook-Toolbox/blob/master/toolbox2.PNG)
+![alt text here](https://github.com/Nina-Om/ArcGIS-MapBook-Toolbox/blob/master/Saved%20Pictures/Capture3.PNG)
 
-![alt text here](https://github.com/Nina-Om/ArcGIS-MapBook-Toolbox/blob/master/jpeg.PNG)
+![alt text here](https://github.com/Nina-Om/ArcGIS-MapBook-Toolbox/blob/master/Saved%20Pictures/jpeg.PNG)
 
 
 ## MapDocument
@@ -36,7 +36,7 @@ Please set up Data Driven Pages before using the tool. As well as the map title,
 
 Please define the map tiltle Element Name as 'TitleText' before using the tool. You should open your map title properties, click on "Size and Position" Tab and type "TitleText" in "Element name" box.
 
-![alt text here](https://github.com/Nina-Om/ArcGIS-MapBook-Toolbox/blob/master/Capture.PNG)
+![alt text here](https://github.com/Nina-Om/ArcGIS-MapBook-Toolbox/blob/master/Saved%20Pictures/Capture.PNG)
 
 
 ## Python Scripts
