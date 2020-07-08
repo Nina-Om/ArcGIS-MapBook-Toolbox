@@ -40,7 +40,7 @@ Uncheck all of the target layers in Table of Contect in Map Document (.mxd) to p
 
 ![alt text here](https://github.com/Nina-Om/ArcGIS-MapBook-Toolbox/blob/master/Saved%20Pictures/layout_example.PNG) <br />
 
-To add layer description to the map automatically for the selected targer layers in the Table of Content, add static text box. In the layer properties, click on "General" Tab, insert layer description text. For all of the target layers insert appropriate description text (optional).<br />
+To add layer description to the map automatically for the selected targer layers in the Table of Content, add static text box to the map layout (bold red text in the above picture). In the layer properties (below picture), click on "General" Tab, insert layer description text. For all of the target layers insert appropriate description text (optional).<br />
 
 ![alt text here](https://github.com/Nina-Om/ArcGIS-MapBook-Toolbox/blob/master/Saved%20Pictures/text.PNG)<br />
 
