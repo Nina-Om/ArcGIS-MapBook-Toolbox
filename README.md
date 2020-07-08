@@ -44,7 +44,7 @@ To add layer description to the map automatically for the selected targer layers
 
 ![alt text here](https://github.com/Nina-Om/ArcGIS-MapBook-Toolbox/blob/master/Saved%20Pictures/text.PNG)<br />
 
-## Python Scripts
+## Python Codes
 ### 1.PDF_MapExport.py
 
 ```python
