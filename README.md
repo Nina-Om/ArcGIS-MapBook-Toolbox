@@ -1,6 +1,6 @@
 # ArcGIS-MapBook-Toolbox
 
-[Download toolbox here](https://github.com/Nina-Om/ArcGIS-MapBook-Toolbox/blob/master/MapBook.zip)
+[Download Toolbox Here](https://github.com/Nina-Om/ArcGIS-MapBook-Toolbox/blob/master/MapBook.zip)
 
 The current scripting Toolbox, MapBook, loop the data layers and automatically 1. changes the data frame title based on the layer name, 2. adds layers description on the map and 3. generats appended/single PDF files of the selected target layers with the aid of Data Driven Pages and Arcpy.mapping.<br />
 
