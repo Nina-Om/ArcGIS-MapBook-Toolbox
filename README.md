@@ -97,7 +97,7 @@ del mxd
 
 ```
 
-### 3. JPEGbyPageIndex.py
+### 2. JPEGbyPageIndex.py
 ```python
 # Read the parameter values:
 listlayers = arcpy. GetParameter(0)
@@ -131,7 +131,7 @@ del mxd
 #  print "Exporting page {0} of {1}".format(str(ddp.currentPageID), str(ddp.pageCount))
 #  arcpy.mapping.ExportToJPEG(mxd, os.path.join(out_ws, Layers[0].name + str(pageNum) + ".JPEG"), resolution=resolution)
   ```
-  ### 4. JPEGbyLayer.py
+  ### 3. JPEGbyLayer.py
  ```python
  import arcpy, os, string
 
