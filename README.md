@@ -114,7 +114,7 @@ mxd = arcpy.mapping.MapDocument("CURRENT")
 df = mxd.activeDataFrame
 ddp = mxd.dataDrivenPages
 ddp.currentPageID = pageNum
-arcpy.RefreshActiveView(),arcpy.RefreshTOC()
+#arcpy.RefreshActiveView(),arcpy.RefreshTOC()
 arcpy.AddMessage(listlayers)
 arcpy.AddMessage(out_ws)
 #Layers = arcpy.mapping.ListLayers(Layername, "", df)
@@ -124,8 +124,9 @@ for lyr in listlayers:
   lyr = arcpy.mapping.ListLayers(mxd, lyr ,df)[0]
   lyr.visible = True
   arcpy.RefreshActiveView(),arcpy.RefreshTOC()
-  TextElement = arcpy.mapping.ListLayoutElements(mxd, "TEXT_ELEMENT", "TitleText")[0]
-  TextElement.text = lyr.name
+  TextElement = arcpy.mapping.ListLayoutElements(mxd, "TEXT_ELEMENT", "")
+  TextElement[2].text = lyr.name
+  TextElement[0].text = lyr.description
   arcpy.mapping.ExportToJPEG(mxd, os.path.join(out_ws, lyr.name + str(pageNum) + ".jpeg"), resolution=resolution)
   lyr.visible = False
   arcpy.RefreshActiveView(),arcpy.RefreshTOC()
@@ -150,8 +151,8 @@ ddp = mxd.dataDrivenPages
 
 Layers = arcpy.mapping.ListLayers(Layername, "", df)
 #Change title text
-TextElement = arcpy.mapping.ListLayoutElements(mxd, "TEXT_ELEMENT","TitleText")[0]
-TextElement.text = Layers[0].name
+TextElement = arcpy.mapping.ListLayoutElements(mxd, "TEXT_ELEMENT","")
+TextElement[2].text = Layers.name
 
 for pageNum in range(1, ddp.pageCount + 1):
   ddp.currentPageID = pageNum
